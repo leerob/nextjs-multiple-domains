@@ -43,6 +43,24 @@ export default function Index({ host }) {
         <p>
           You're current viewing the host <code>{host}</code>.
         </p>
+        <button
+          onClick={() => window.location.reload()}
+          className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded mr-4"
+        >
+          Refresh
+        </button>
+        <button
+          onClick={() =>
+            window.location.assign(
+              `https://multi-domain-${
+                host === 'multi-domain-first' ? 'second' : 'first'
+              }.vercel.app`
+            )
+          }
+          className="bg-transparent hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4"
+        >
+          Switch Domain
+        </button>
         <p>
           This value is considered fresh for one second (<code>s-maxage=1</code>
           ). If a request is repeated within the next second, the previously

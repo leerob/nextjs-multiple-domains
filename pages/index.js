@@ -53,7 +53,7 @@ export default function Index({ host }) {
           onClick={() =>
             window.location.assign(
               `https://multi-domain-${
-                host === 'multi-domain-first' ? 'second' : 'first'
+                host === 'multi-domain-first.vercel.app' ? 'second' : 'first'
               }.vercel.app`
             )
           }

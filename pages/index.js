@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 export default function Index({ host }) {
   return (
     <Layout>
-      <article className="prose lg:prose-xl px-8 m-auto mt-16">
+      <article className="prose lg:prose-xl px-8 m-auto my-16">
         <h3>Next.js Multiple Domains</h3>
         <p>
           With Next.js, you can combine the benefits of static with dynamic

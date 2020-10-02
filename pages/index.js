@@ -35,9 +35,12 @@ export default function Index({ host }) {
           <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">
             cache-control
           </a>{' '}
-          header uses <a href="/">stale-while-revalidate</a> to cache the server
-          response. This allows you to generate static pages for any number of
-          host headers.
+          header uses{' '}
+          <a href="https://web.dev/stale-while-revalidate/">
+            stale-while-revalidate
+          </a>{' '}
+          to cache the server response. This allows you to generate static pages
+          for any number of host headers.
         </p>
         <hr />
         <p>
